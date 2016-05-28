@@ -1,6 +1,7 @@
 ﻿using AutomataOperations.Application.Contracts;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,13 @@ namespace AutomataOperations.Application.Provider
 
         public string[] ReadInputFileRequest()
         {
-            throw new NotImplementedException();
+            return ReadFileAsArray();
+        }
+
+        private string [] ReadFileAsArray()
+        {
+            var fileAsArray = File.ReadAllLines(_filePath);
+            return fileAsArray;
         }
     }
 }
