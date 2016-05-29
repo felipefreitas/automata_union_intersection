@@ -1,6 +1,6 @@
 ﻿namespace AutomataOperations.Application.Contracts
 {
-    public interface IAutomataFileRequest
+    public interface IFileReaderProvider
     {
         string[] ReadInputFileRequest();
         void PrintAutomataRequests();
