@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AutomataOperations.Application.Compiler
 {
-    public class TypeFactory
+    public class TypeFlowFactory
     {
-        //public static BaseType Create()
-        //{
-
-        //}
+        public static BaseType Create()
+        {
+            return null;
+        }
     }
 }

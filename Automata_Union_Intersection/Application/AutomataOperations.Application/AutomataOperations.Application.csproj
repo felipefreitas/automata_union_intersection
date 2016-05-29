@@ -43,7 +43,7 @@
     <Compile Include="Compiler\BaseType.cs" />
     <Compile Include="Compiler\CustomType.cs" />
     <Compile Include="Compiler\ECustomType.cs" />
-    <Compile Include="Compiler\TypeFactory.cs" />
+    <Compile Include="Compiler\TypeFlowFactory.cs" />
     <Compile Include="Compiler\TypeToRecognize.cs" />
     <Compile Include="Contracts\IAutomataOperationService.cs" />
     <Compile Include="Contracts\IFileReaderProvider.cs" />
