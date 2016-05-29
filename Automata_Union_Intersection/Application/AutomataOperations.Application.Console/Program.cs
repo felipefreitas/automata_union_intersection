@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AutomataOperations.Application.Contracts;
+using AutomataOperations.Application.Provider;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -20,6 +22,7 @@ namespace AutomataOperations.Application.Console
                 return _automataFilePath;
             }
         }
+        protected static IFileReaderProvider ReaderProvider;
 
         private static string _automataFilePath;
 
@@ -31,6 +34,8 @@ namespace AutomataOperations.Application.Console
 
         private static void ReadFile()
         {
+            ReaderProvider = new FileReaderProvider(AutomataFilePath);
+
             throw new NotImplementedException();
         }
 
