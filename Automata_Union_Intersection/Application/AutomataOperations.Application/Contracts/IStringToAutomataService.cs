@@ -5,6 +5,6 @@ namespace AutomataOperations.Application.Contracts
 {
     public interface IStringToAutomataService
     {
-        IEnumerable<DfaAutomata> ProcessString { get; set; }
+        IEnumerable<DfaAutomata> ProcessString(string [] toProcess);
     }
 }

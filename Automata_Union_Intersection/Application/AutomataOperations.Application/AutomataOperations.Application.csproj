@@ -40,16 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compiler\BaseType.cs" />
+    <Compile Include="Compiler\CustomType.cs" />
+    <Compile Include="Compiler\ECustomType.cs" />
+    <Compile Include="Compiler\TypeFactory.cs" />
+    <Compile Include="Compiler\TypeToRecognize.cs" />
     <Compile Include="Contracts\IAutomataOperationService.cs" />
     <Compile Include="Contracts\IFileReaderProvider.cs" />
+    <Compile Include="Contracts\IStringToAutomataService.cs" />
     <Compile Include="Models\DfaAutomata.cs" />
     <Compile Include="Models\State.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\FileReaderProvider.cs" />
+    <Compile Include="Services\StringToAutomataService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
