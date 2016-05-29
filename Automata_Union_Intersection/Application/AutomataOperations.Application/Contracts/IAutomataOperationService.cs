@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutomataOperations.Application.Models;
 
 namespace AutomataOperations.Application.Contracts
 {
     public interface IAutomataOperationService
     {
-        void UnionAutomata();
-        void IntersectionAutomata();
+        DfaAutomata UnionAutomata();
+        DfaAutomata IntersectionAutomata();
     }
 }
